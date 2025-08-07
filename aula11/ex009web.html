@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises e Nacionalidades</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua nascionalidade:</h1>
+    Nome do pais de nascença: <input type="search" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="res"></div>
+    <script>
+       function pesquisar(){
+        var txtp = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var cal = String(txtp.value)
+        res.innerHTML = `<p>sua nascionalidade é ${cal}</P>`
+            if (cal == 'Brasil' ){
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            }else{
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-size: 15pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos DOM</h1><!--dom = document object model-->
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div class="msg">Clique em mim </div>
+    <p></p>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'black'
+        
+        //var d = window.document.getElementById('msg')
+        //<div class="msg"> </div> 
+        //<div id="msg"> </div>
+        //window.document.getElementsByClassName
+        //d.style.background = ' '
+        //d.innerText = ' '
+        /*window.alert(p1.innerText)*/
+        /* window.alert(p1.innerHTML)*/
+        /*document.write(p1.innerHTML)*/
+        /*p1.style.color = 'black'*/   
+        /*corpo.style.background = 'cor'*/
+        /*window.document.write(p1.innerText)*/
+        /*window.document.write('ola, mundo')*/
+        /*window.document.write(window.document.charset)*/
+        /*window.document.write(window.navigator.appName)*/
+        /*window.document.write(window.document.url)*/
+
+        
+    </script>
+</body>
+</html>
